@@ -1,0 +1,580 @@
+* {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background: rgb(224, 218, 218);
+}
+.container {
+    width: 100%;
+    height: 100%;
+}
+.main {
+    width: 100%;
+    height: 70px;
+    background: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+h1 {
+    font-size: 2em;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    color: rgb(25, 34, 34);
+}
+.nav-link {
+    text-decoration: none;
+    color: rgb(25, 34, 34);
+    font-size: 1em;
+    font-family: poppins;
+    text-transform: uppercase;
+    margin-left: 1.5em;
+    transition: 600ms ease-in;
+}
+.nav-link:hover {
+    border-bottom: 3px groove rgb(25, 34, 34);
+    color: rgb(25, 34, 34);
+}
+.nav-icons{
+    width: 100px;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.hero {
+    width: 100%;
+    height: 100%;
+    background: rgb(224, 218, 218);
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+    grid-auto-flow: column;
+
+}
+.sub-hero {
+    width: 100%;
+    height: 60%;
+    background: rgb(224, 218, 218);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 2em;
+}
+.he-h2 {
+    font-size: 3.5em;
+    font-weight: bold;
+    color: rgb(25, 34, 34);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    animation-name: yon;
+    animation-timing-function: linear;
+    animation-duration: 3s;
+    animation-fill-mode: both;
+    animation-direction: alternate;
+    animation-delay: 0s;
+}
+@keyframes yon {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    50% {
+        transform: translateX(-90px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(1px);
+        opacity: 1;
+    }
+}
+.he-h1 {
+    font-size: 2.5em;
+    color: goldenrod;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-transform: uppercase;
+    animation-name: yon;
+    animation-timing-function: linear;
+    animation-duration: 3s;
+    animation-fill-mode: both;
+    animation-direction: alternate;
+    animation-delay: 2s;
+}
+.sub-text {
+    font-size: 1em;
+    margin-top: 1.5em;
+    font-family: poppins;
+    animation-name: yon;
+    animation-timing-function: linear;
+    animation-duration: 3s;
+    animation-fill-mode: both;
+    animation-direction: alternate;
+    animation-delay: 3s;
+}
+.links-hero {
+    margin-top: 2em;
+    width: 50%;
+    height: 20px;
+    margin-left: -6.5em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.hero-link {
+    width: 150px;
+    height: 35px;
+    display: block;
+    background: rgb(25, 34, 34);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation-name: yon;
+    animation-timing-function: linear;
+    animation-duration: 3s;
+    animation-fill-mode: both;
+    animation-direction: alternate;
+    animation-delay: 4s;
+}
+.link-hero1 {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(25, 34, 34);
+    font-weight: bold;
+    font-size: .8em;
+    animation-name: yon;
+    animation-timing-function: linear;
+    animation-duration: 3s;
+    animation-fill-mode: both;
+    animation-direction: alternate;
+    animation-delay: 4.5s;
+}
+.link-hero {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-family: poppins;
+    font-size: .8em;
+}
+
+.sub-hero1 {
+    width: 97%;
+    height: 75%;
+    background:  rgb(224, 218, 218);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2em;
+    animation-name: yon;
+    animation-timing-function: linear;
+    animation-duration: 3s;
+    animation-fill-mode: both;
+    animation-direction: alternate;
+    animation-delay: 1s;
+}
+.table {
+    width: 450px;
+    height: 450px;
+}
+.section {
+    width: 100%;
+    height: 80%;
+    background: rgb(224, 218, 218);
+    position: absolute;
+    top: 95%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    grid-gap: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;   
+}
+
+.sec1 {
+    width: 370px;
+    height: 100%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: 400ms cubic-bezier(0.39, 1.49, 1, 0.81);
+}
+.sec1:hover {
+    box-shadow: 4px 4px 8px rgba(218, 165, 32, 0.692), -4px -4px 8px rgba(218, 165, 32, 0.692);
+}
+.sec-seb {
+    width: 370px;
+    height: 100%;
+    background: transparent;
+    text-transform: uppercase;
+    font-family: poppins;
+    font-size: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.seb1 {
+    width: 60%;
+    height: 3px;
+    background: rgb(141, 108, 24);
+    align-self: center;
+    animation-name: pon;
+    animation-timing-function: linear;
+    animation-duration: 3s;
+    animation-fill-mode: both;
+    animation-direction: alternate;
+    animation-delay: 10s;
+}
+@keyframes pon {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    50% {
+        transform: translateX(-90px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(1px);
+        opacity: 1;
+    }
+}
+.chair {
+    width: 90%;
+    height: 80%;
+}
+.img-text {
+    font-size: 1.2em;
+    font-family: poppins;
+    color: rgb(204, 150, 15);
+    text-transform: capitalize;
+}
+.img-text1 {
+    font-size: 1.2em;
+    font-family: poppins;
+    color: rgba(0, 0, 0, 0.925);
+    text-transform: capitalize;
+    margin-left: 2em;
+}
+.img-text2 {
+    font-size: 1.2em;
+    font-family: poppins;
+    color: rgba(0, 0, 0, 0.925);
+    text-transform: capitalize;
+    margin-left: 4em;
+}
+.section2 {
+    width: 100%;
+    height: 80%;
+    background: rgb(224, 218, 218);
+    position: absolute;
+    top: 230%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.sub-sec2 {
+    width: 100%;
+    height: 100%;
+    background: rgb(224, 218, 218);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.sub-sec21 {
+    width: 100%;
+    height: 100%;
+    background: rgb(224, 218, 218);
+    padding-top: 8%;
+}
+.chair1 {
+    width: 95%;
+    height: 85%;
+}
+.sub-sec21-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+h3 {
+    font-size: 2em;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: rgb(25, 34, 34);
+}
+.text-sec2-1 {
+    font-size: .8em;
+    font-family: poppins;
+    color: rgb(25, 34, 34);  
+}
+.text-sec2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 100px;
+    background: transparent;
+    padding-left: 10%;
+}
+.boxes {
+    width: 100%;
+    height: 35%;
+    background: transparent;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+    margin-top: 1em;
+}
+.main-box {
+    width: 300px;
+    height: 80px;
+    background: white;
+    display: flex;
+    color: rgb(25, 34, 34);
+    align-self: center;
+    justify-self: center;
+}
+.icon {
+    width: 50px;
+    height: 100%;
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box-text {
+    width: 250px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.3em;
+}
+.text-box {
+    font-size: 1em;
+    font-family: poppins;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.text-box1 {
+    font-size: .8em;
+    font-family: poppins;
+    text-transform: capitalize;
+}
+.text-link {
+    width: 150px;
+    height: 50px;
+    background: rgb(25, 34, 34);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    margin-top: 1.3em;
+    margin-left: 1em;
+}
+.text-link1 {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    font-size: .8em;
+}
+.section3 {
+    width: 100%;
+    height: 80%;
+    background: rgb(224, 218, 218);
+    position: absolute;
+    top: 330%;
+}
+.sub-sec3 {
+    width: 100%;
+    height: 100px;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.sec3-line {
+    width: 18%;
+    height: 3px;
+    background: rgb(190, 145, 30);
+}
+.chair3{
+   width: 70%;
+   height: 700px;
+   float: right;
+}
+.text-img {
+    width: 65%;
+    height: 90%;
+    background: white;
+    position: absolute;
+    top: 40%;
+    margin-left: 1em;
+}
+.text-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.text-img-icon {
+    width: 10%;
+    height: 100%;
+    font-size: 2em;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0em 1em 0em 1em;
+}
+.textimg1 {
+    padding: 0 3em 0 3em;
+    font-size: .8em;
+    font-family: poppins;
+    color: rgb(25, 34, 34);
+}
+.pic1 {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: -2em;
+    margin-top: 1em;
+}
+.remark {
+    position: absolute;
+    border-radius: 50%;
+    bottom: 10%;
+    left: 40%;
+}
+.remarks {
+    font-size: 1.1em;
+    font-family: poppins;
+    font-weight: bold;
+    color: rgb(25, 34, 34);
+}
+.footer {
+    width: 100%;
+    height: 70%;
+    background: rgb(224, 218, 218);
+    position: absolute;
+    top: 460%;
+    display: flex;
+    align-items: end;
+    justify-content: center; 
+}
+.footL {
+    width: 90%;
+    height: 80%;
+    background: rgb(25, 34, 34);
+}
+.footer-main {
+    width: 100%;
+    height: 85%;
+    background: rgb(25, 34, 34);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    border-bottom: 2px groove rgb(224, 218, 218);
+}
+.foot {
+    font-size: 2em;
+    font-family: sans-serif;
+    color: white;
+    text-transform: uppercase;
+}
+.foot-1st {
+    width: 30%;
+    height: 80%;
+    background:transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding-left: 4em;
+    padding-top: 1.5em;
+}
+.foot1{
+    font-size: 1em;
+    font-family: poppins;
+    color: rgba(255, 255, 255, 0.781);
+    margin-top: 1.3em;
+}
+#jon {
+    width: 220px;
+    height: 30px;
+    background: transparent;
+    color: white;
+    padding-left: 1em;
+    text-transform: capitalize;
+    border: 1px groove rgb(224, 218, 218);
+    margin-top: 1.3em;
+}
+.foot-button {
+    width: 80px;
+    height: 31px;
+    text-transform: capitalize;
+    color: white;
+    background: goldenrod;
+    border: 0px;
+}
+.footer-major {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 70%;
+    height: 100%;
+}
+.footer-links {
+    display: flex;
+    flex-direction: column;
+}
+#link {
+    font-size: 1.3em;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: capitalize;
+}
+#links {
+    font-size: 1em;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.781);
+    text-transform: capitalize;
+    display: inline-block;
+    margin-top: 1em;
+}
+.last-text {
+    font-size: 1em;
+    font-family: sans-serif;
+    color: white;
+    text-transform: capitalize;
+    padding-top: 1em;
+    padding-left: 4em;
+}
